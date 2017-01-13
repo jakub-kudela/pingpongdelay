@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PingPongDelay" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/PingPongDelay" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="vstsdk2.4" />
+					<Add directory="vstsdk2.4/vstgui.sf/vstgui" />
+					<Add directory="vstsdk2.4/public.sdk/source/vst2.x" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-def vstsdk2.4\public.sdk\samples\vst2.x\win\vstplug.def" />
+					<Add library="uuid" />
+					<Add library="ole32" />
+					<Add library="kernel32" />
+					<Add library="gdi32" />
+					<Add library="user32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Main.cpp" />
+		<Unit filename="PingPongDelayEditor.cpp" />
+		<Unit filename="PingPongDelayEditor.h" />
+		<Unit filename="PingPongDelayEffect.cpp" />
+		<Unit filename="PingPongDelayEffect.h" />
+		<Unit filename="PingPongDelayUnit.cpp" />
+		<Unit filename="PingPongDelayUnit.h" />
+		<Unit filename="Resources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="vstsdk2.4/public.sdk/source/vst2.x/audioeffect.cpp" />
+		<Unit filename="vstsdk2.4/public.sdk/source/vst2.x/audioeffectx.cpp" />
+		<Unit filename="vstsdk2.4/public.sdk/source/vst2.x/vstplugmain.cpp" />
+		<Unit filename="vstsdk2.4/vstgui.sf/vstgui/aeffguieditor.cpp" />
+		<Unit filename="vstsdk2.4/vstgui.sf/vstgui/vstcontrols.cpp" />
+		<Unit filename="vstsdk2.4/vstgui.sf/vstgui/vstgui.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

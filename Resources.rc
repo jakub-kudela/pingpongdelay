@@ -1,0 +1,22 @@
+/**
+* Resources.rc:
+*
+* Resources file for GUIEditor class.
+*
+* @author  Jakub Kúdela
+* @version 1.0
+* @since 2012-01-21
+*
+* @see GUIEditor
+*/
+
+
+#define APSTUDIO_READONLY_SYMBOLS
+
+
+//  Ping Pong Delay VST GUI bitmap resources.
+1  BITMAP  DISCARDABLE  "Resources/background.bmp"
+2  BITMAP  DISCARDABLE  "Resources/faderBackground.bmp"
+3  BITMAP  DISCARDABLE  "Resources/fader.bmp"
+4  BITMAP  DISCARDABLE  "Resources/syncButton.bmp"
+
